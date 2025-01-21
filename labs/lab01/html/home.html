@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Your Bookstore</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      /* Header */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .header .logo h1 {
+        font-size: 1.8rem;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #f9f9f9;
+      }
+
+      /* Welcome Banner */
+      .welcome-banner {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 5rem 2rem;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .welcome-banner h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .welcome-banner p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      /* About Section */
+      .about-section,
+      .collection-section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .about-section h2,
+      .collection-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-section p,
+      .collection-section p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Your Bookstore</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/collection">Our Collection</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome-banner">
+        <div class="banner-content">
+          <h2>Welcome to Your Bookstore</h2>
+          <p>Your gateway to endless stories, knowledge, and inspiration.</p>
+          <a href="/collection" class="btn">Explore Our Collection</a>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+          At Your Bookstore, we celebrate the love of reading and the joy of
+          discovering new stories. Whether you're looking for a timeless classic
+          or the latest bestseller, we've got you covered.
+        </p>
+      </section>
+
+      <section id="collection" class="collection-section">
+        <h2>Our Collection</h2>
+        <p>
+          From fiction to non-fiction, children's books to self-help guides,
+          explore a diverse range of genres and find your next great read.
+        </p>
+        <a href="#" class="btn">Browse Now</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Your Bookstore | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
